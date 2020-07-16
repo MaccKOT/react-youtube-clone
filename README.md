@@ -1,8 +1,8 @@
 # Build a YouTube Clone Application Using React
 
-[Original tutorial video](https://www.youtube.com/watch?v=VPVzx1ZOVuw)
+[📺 Original tutorial video](https://www.youtube.com/watch?v=VPVzx1ZOVuw)
 
-**.env** file with SNOWPACK_PUBLIC_YOUTUBE_API_KEY not included.
+`.env` file with SNOWPACK_PUBLIC_YOUTUBE_API_KEY not included.
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
