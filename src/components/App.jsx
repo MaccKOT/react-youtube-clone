@@ -1,22 +1,29 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import './App.css';
-import Button from '@material-ui/core/Button';
-import Chip from '@material-ui/core/Chip';
+import { Grid } from '@material-ui/core';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          Edit <Chip label="src/App.jsx" /> and SAVE to reload.
-        </div>
-        <br />
-        <Button variant="contained" color="primary">
-          Material UI is working fine!
-        </Button>
-      </header>
-    </div>
-  );
+import youtube from '../api/youtube';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Grid justify="center" container spacing={10}>
+          <Grid item xs={12}>
+            <Grid container spacing={10}>
+              <Grid item xs={12}>
+                {/* {Search bar} */}
+              </Grid>
+              <Grid item xs={8}>
+                {/* {Main video detail} */}
+              </Grid>
+              <Grid item xs={4}>
+                {/* {Video list} */}
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </div>
+    );
+  }
 }
-
-export default App;
