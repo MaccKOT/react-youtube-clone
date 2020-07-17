@@ -25,7 +25,7 @@ export default class App extends Component {
       },
     });
 
-    console.log(response.data.items);
+    // console.log(response.data.items);
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[0],
