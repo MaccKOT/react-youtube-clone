@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Paper, TextField } from '@material-ui/core';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import SearchIcon from '@material-ui/icons/Search';
 
 class SearchBar extends Component {
   state = {
@@ -23,9 +25,16 @@ class SearchBar extends Component {
           <TextField
             fullWidth
             variant="outlined"
-            label="Search..."
+            placeholder="Search..."
             type="search"
             onChange={this.handleChange}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <SearchIcon />
+                </InputAdornment>
+              ),
+            }}
           />
         </form>
       </Paper>

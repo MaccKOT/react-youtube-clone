@@ -1,5 +1,6 @@
 import React from 'react';
-import { Paper, Typography } from '@material-ui/core';
+import { Grid, Paper, Typography } from '@material-ui/core';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
 const VideoDetail = ({ video }) => {
   if (!video) return <div>Loading...</div>;
@@ -20,7 +21,10 @@ const VideoDetail = ({ video }) => {
       <Paper elevation={3} style={{ padding: '15px' }}>
         <Typography variant="h5">{video.snippet.title}</Typography>
         <Typography variant="subtitle1">
-          {video.snippet.channelTitle}
+          <Grid container item xs>
+            <YouTubeIcon style={{ color: 'red' }} />
+            {video.snippet.channelTitle}
+          </Grid>
         </Typography>
         <Typography variant="subtitle2">{video.snippet.description}</Typography>
       </Paper>
