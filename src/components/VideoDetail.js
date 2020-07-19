@@ -21,7 +21,7 @@ const VideoDetail = ({ video }) => {
       <Paper elevation={3} style={{ padding: '15px' }}>
         <Typography variant="h5">{video.snippet.title}</Typography>
         <Typography variant="subtitle1">
-          <Grid container item xs>
+          <Grid container xs>
             <YouTubeIcon style={{ color: 'red' }} />
             {video.snippet.channelTitle}
           </Grid>
